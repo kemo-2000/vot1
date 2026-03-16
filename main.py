@@ -5,7 +5,7 @@ success=0
 while True:
   try:
     session = requests.Session()
-    url = "https://www.radionrjfm.com/vote/26"
+    url = "https://www.radionrjfm.com/vote/20"
 
     # impersonate="chrome" هي السحر اللي بيعدي الحماية
     response = session.get(url, impersonate="chrome")
@@ -32,7 +32,7 @@ while True:
                     "content-type": "application/x-www-form-urlencoded",
                     # "cookie": f"webground_session={web_session}",
                     "origin": "https://www.radionrjfm.com",
-                    "referer": "https://www.radionrjfm.com/vote/26",
+                    "referer": "https://www.radionrjfm.com/vote/20",
                     "sec-ch-ua": '"Chromium";v="134", "Not:A-Brand";v="24", "Google Chrome";v="134"',
                     "sec-ch-ua-mobile": "?0",
                     "sec-ch-ua-platform": '"Windows"',
@@ -44,11 +44,11 @@ while True:
                     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
                     }
     payload = {
-            "gidvnrj": "26",
+            "gidvnrj": "20,
                 "sex": "1",
                 "age": "3",
                 "_token": csrf_token,  # Use the extracted token
-                "answers[427]": "1"
+                "answers[435]": "1"
                         }
     res2=session.post(url,headers=headers,data=payload)
     print(res2.status_code)

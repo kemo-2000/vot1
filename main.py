@@ -44,7 +44,7 @@ while True:
                     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
                     }
     payload = {
-            "gidvnrj": "20,
+            "gidvnrj": "20",
                 "sex": "1",
                 "age": "3",
                 "_token": csrf_token,  # Use the extracted token
